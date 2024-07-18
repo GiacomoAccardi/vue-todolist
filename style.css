@@ -30,14 +30,18 @@ body{
     align-items: center;
     margin-bottom: 10px;
 }
-.btn_canc{
+.btn-canc{
     background-color: rgb(255, 67, 67);
+}
+.btn-add{
+    background-color: rgb(35, 121, 31);
+}
+.btn{
     color: white;
     border: none;
     padding: 5px 15px;
 }
 .add{
-    width: 100%;
-    border-radius: 15px;
+    width: 82%;
     height: 25 px;
 }
