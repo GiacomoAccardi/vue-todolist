@@ -8,3 +8,33 @@
 7.Creare un campo di input che permetta l'inserimento di un "todo"
 */
 
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+            todoes: [
+                {
+                    text: 'imparare html',
+                    done: false
+                },
+                {
+                    text: 'imparare css',
+                    done: false
+                },
+                {
+                    text: 'imparare Javascript',
+                    done: false
+                },
+                {
+                    text: 'imparare Php',
+                    done: false
+                },
+                {
+                    text: 'Creare un sito',
+                    done: false
+                },
+            ]
+        }
+    }
+}).mount('#app')

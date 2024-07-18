@@ -28,6 +28,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 .btn_canc{
     background-color: rgb(255, 67, 67);
