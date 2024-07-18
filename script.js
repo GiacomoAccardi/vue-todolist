@@ -36,5 +36,10 @@ createApp({
                 },
             ]
         }
+    },
+    methods: {
+        cancel(index){
+            this.todoes.splice(index, 1);
+        }
     }
 }).mount('#app');

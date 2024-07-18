@@ -21,7 +21,7 @@
                 <h3>To do:</h3>
                 <div class="elements" v-for="(x, index) in todoes">
                     <span :class="x.done == true ? 'done' : ''">{{ todoes[index].text }}</span>
-                    <button class="btn btn-canc">X</button>
+                    <button class="btn btn-canc" @click="cancel(index)">X</button>
                 </div>
             </div>
         </div>
