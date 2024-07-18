@@ -15,8 +15,8 @@
             <div class="todo">
                 <div class="text">
                     <h3>Aggiungi un elemento</h3>
-                    <input type="text" class="add">
-                    <button class="btn btn-add">Aggiungi</button>
+                    <input type="text" v-model="newTask" class="add">
+                    <button class="btn btn-add" @click="add()">Aggiungi</button>
                 </div>
                 <h3>To do:</h3>
                 <div class="elements" v-for="(x, index) in todoes">

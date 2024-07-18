@@ -13,6 +13,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            newTask: null,
             todoes: [
                 {
                     text: 'imparare html',
@@ -40,6 +41,13 @@ createApp({
     methods: {
         cancel(index){
             this.todoes.splice(index, 1);
+        },
+        add(){
+            let obj = {
+                text: this.newTask,
+                done: false
+            };
+            this.todoes.push(obj);
         }
     }
 }).mount('#app');
