@@ -48,6 +48,8 @@ createApp({
                 done: false
             };
             this.todoes.push(obj);
+
+            this.newTask = null
         }
     }
 }).mount('#app');
