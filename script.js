@@ -8,12 +8,15 @@
 7.Creare un campo di input che permetta l'inserimento di un "todo"
 */
 
+//creo un progetto in Vue
 const { createApp } = Vue;
 
 createApp({
     data() {
         return {
+            //dichiaro che il valore dell'input text è nulo
             newTask: null,
+            //creo un'array ad oggetti contentente le mie tasks
             todoes: [
                 {
                     text: 'imparare html',
@@ -39,16 +42,17 @@ createApp({
         }
     },
     methods: {
-        cancel(index){
-            this.todoes.splice(index, 1);
+        cancel(index){ //creo la funzione per cancellare le task
+            this.todoes.splice(index, 1); 
         },
-        add(){
+        add(){  //creo la funzione per aggiungere le task
             let obj = {
                 text: this.newTask,
                 done: false
             };
             this.todoes.push(obj);
 
+            //pulisco l'input text dopo l'aggiunta del task
             this.newTask = null
         }
     }
