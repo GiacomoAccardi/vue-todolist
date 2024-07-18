@@ -9,16 +9,22 @@
 
 <body>
     <div class="wrapper">
+        <!--Il div "App" conterrà gli elementi gestiti dallo script-->
         <div id="app">
             <h1>TodoList</h1>
             <hr>
             <div class="todo">
+
+                <!--sezione per aggiungere una nuova task-->
                 <div class="text">
                     <h3>Aggiungi un elemento</h3>
                     <input type="text" v-model="newTask" class="add">
                     <button class="btn btn-add" @click="add()">Aggiungi</button>
                 </div>
+
                 <h3>To do:</h3>
+
+                <!--Gli elementi della todo saranno visualizzati qui-->
                 <div class="elements" v-for="(x, index) in todoes">
                     <span :class="x.done == true ? 'done' : ''">{{ todoes[index].text }}</span>
                     <button class="btn btn-canc" @click="cancel(index)">X</button>
