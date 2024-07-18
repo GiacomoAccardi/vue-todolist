@@ -45,3 +45,6 @@ body{
     width: 82%;
     height: 25 px;
 }
+.done{
+    text-decoration: line-through;
+}

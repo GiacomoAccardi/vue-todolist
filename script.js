@@ -16,11 +16,11 @@ createApp({
             todoes: [
                 {
                     text: 'imparare html',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'imparare css',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'imparare Javascript',
