@@ -3,3 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 254, 193);
+}
+.wrapper{
+    background-color: rgb(61, 61, 61);
+    width: 500px;
+    height: 600px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper h3, .element{
+    margin: 10px 0 10px 0;
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_canc{
+    background-color: rgb(255, 67, 67);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+}
+.add{
+    width: 100%;
+    border-radius: 15px;
+    height: 25 px;
+}

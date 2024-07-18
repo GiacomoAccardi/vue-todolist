@@ -7,3 +7,4 @@
 6.creare una funzione che permetta di rimuovere un "todo"
 7.Creare un campo di input che permetta l'inserimento di un "todo"
 */
+
